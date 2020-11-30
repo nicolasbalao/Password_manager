@@ -1,0 +1,91 @@
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cython3 ettercap-common ettercap-graphical faraday-client fonts-roboto-slab gir1.2-gtksource-3.0 gir1.2-vte-2.91 libapache2-mod-php libluajit-5.1-2 libluajit-5.1-common oracle-instantclient-basic pgcli postgresql-client-12 pwgen
+  python-babel-localedata python-mpltoolkits.basemap-data python3-advancedhttpserver python3-alembic python3-apispec python3-apispec-webframeworks python3-autobahn python3-babel python3-boltons python3-bottle python3-cbor
+  python3-chameleon python3-configobj python3-deprecation python3-django python3-ecdsa python3-editor python3-email-validator python3-faraday-plugins python3-feedparser python3-filedepot python3-filteralchemy python3-flask-babelex
+  python3-flask-classful python3-flask-kvsession python3-flask-login python3-flask-mail python3-flask-principal python3-flask-security python3-flask-sqlalchemy python3-flaskext.wtf python3-geoip2 python3-geojson python3-graphene
+  python3-graphene-sqlalchemy python3-graphql-core python3-graphql-relay python3-html2text python3-humanize python3-hupper python3-icalendar python3-lz4 python3-marshmallow python3-marshmallow-sqlalchemy python3-maxminddb
+  python3-mpltoolkits.basemap python3-nplusone python3-pefile python3-pgspecial python3-plaster python3-plaster-pastedeploy python3-png python3-promise python3-pyotp python3-pyproj python3-pyqrcode python3-pyramid python3-pyshp
+  python3-qrcode python3-requests-file python3-rule-engine python3-rx python3-selenium python3-setproctitle python3-simplekv python3-singledispatch python3-smoke-zephyr python3-speaklater python3-sqlalchemy-schemadisplay python3-sqlparse
+  python3-syslog-rfc5424-formatter python3-tabulate python3-translationstring python3-trie python3-txaio python3-u-msgpack python3-ubjson python3-unidecode python3-venusian python3-waitress python3-webargs python3-websocket
+  python3-webtest python3-wsaccel python3-wtforms python3-zope.component python3-zope.deprecation python3-zope.event python3-zope.hookable
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  postgresql-13 postgresql-client-common postgresql-common
+Suggested packages:
+  postgresql-doc libjson-perl
+The following NEW packages will be installed:
+  postgresql postgresql-13 postgresql-common
+The following packages will be upgraded:
+  postgresql-client-common
+1 upgraded, 3 newly installed, 0 to remove and 654 not upgraded.
+Need to get 15.2 MB/15.5 MB of archives.
+After this operation, 49.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ftp.free.fr/pub/kali kali-rolling/main amd64 postgresql-13 amd64 13.0-4 [15.1 MB]
+Get:2 http://ftp.free.fr/pub/kali kali-rolling/main amd64 postgresql all 13+221 [64.2 kB]                                                                                                                                                     
+Fetched 15.2 MB in 9s (1,749 kB/s)                                                                                                                                                                                                            
+Preconfiguring packages ...
+supported-versions: WARNING! Unknown distribution: kali
+debian found in ID_LIKE, treating as Debian
+supported-versions: WARNING: Unknown Debian release: 2020.3
+(Reading database ... 347810 files and directories currently installed.)
+Preparing to unpack .../postgresql-client-common_221_all.deb ...
+Unpacking postgresql-client-common (221) over (216) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../postgresql-common_221_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (221) ...
+Selecting previously unselected package postgresql-13.
+Preparing to unpack .../postgresql-13_13.0-4_amd64.deb ...
+Unpacking postgresql-13 (13.0-4) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_13+221_all.deb ...
+Unpacking postgresql (13+221) ...
+Setting up postgresql-client-common (221) ...
+Setting up postgresql-common (221) ...
+supported-versions: WARNING! Unknown distribution: kali
+debian found in ID_LIKE, treating as Debian
+supported-versions: WARNING: Unknown Debian release: 2020.3
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+update-rc.d: As per Kali policy, postgresql init script is left disabled.
+Setting up postgresql-13 (13.0-4) ...
+Creating new PostgreSQL cluster 13/main ...
+/usr/lib/postgresql/13/bin/initdb -D /var/lib/postgresql/13/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/13/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Europe/Paris
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctlcluster 13 main start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+13  main    5432 down   postgres /var/lib/postgresql/13/main /var/log/postgresql/postgresql-13-main.log
+update-alternatives: using /usr/share/postgresql/13/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up postgresql (13+221) ...
+Processing triggers for systemd (246.6-1) ...
+Processing triggers for man-db (2.9.3-2) ...
+Processing triggers for kali-menu (2020.3.2) ...
+

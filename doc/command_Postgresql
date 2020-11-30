@@ -1,0 +1,34 @@
+COMMAND:  Name dtabase = Password_manager
+
+
+start service: sudo systemctl start postgresql.service
+
+chek statu:  sudo systemctl status postgresql.service
+
+connect to user: sudo -i -u postgres
+
+after log: psql
+
+Crée = createdb name_database
+
+acceder = psql name_database
+
+TABLE:
+name table = data
+
+create a table = CREATE TABLE name (name of colums and their type)
+
+
+
+show tables = \dt (+)
+
+clear = \! clear
+
+
+SQL syntax: 
+
+show in table = SELECT * FROM (name of table)
+
+insert line  = INSERT INTO name of table (colum) VALUES (value of colums)
+exp = INSERT INTO data (username, password, email, site, url) VALUES ('tengu', 'test1234', 'test@test.com', 'test', 'http://test.com') ;
+

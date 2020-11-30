@@ -1,0 +1,16 @@
+#Recupere les valeurs:
+#cur.execute("SELECT * FROM data")
+#answer = cur.fetchall()
+
+""" SELECT with a tri
+cur.execute("SELECT * FROM data WHERE email='test@test.com'")
+answer = cur.fetchall()
+print(answer)
+"""
+
+
+#print(answer)
+
+#mettre des valeur:
+#cur.execute("INSERT INTO data (username, password, email, site, url) VALUES ('tengu', 'test1234', 'test@test.com', 'test', 'http://test.com')")
+#conn.commit()
