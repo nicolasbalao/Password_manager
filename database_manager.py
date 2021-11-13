@@ -112,8 +112,5 @@ def connect():
 		print("you are not connect on database")
 
 
-#store_password('nico', 'nico2468', 'nicolasbalao2@gmail.com', 'laboucherie', 'laboucherie.com')
-#get_information_from_email("nicolasbalao2@gmail.com")
-#get_password_from_site("laboucherie")
-#get_inforamtion_from_site("laboucherie")
+
 
