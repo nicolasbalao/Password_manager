@@ -12,7 +12,7 @@ from menu import menu, Stor, find_profile_by_email, find_password_for_site, menu
 passw = input("Please enter the master password for tengu: ")
 
 
-if passw == "nico":
+if passw == "|||||":
 	print(' ')
 	print("You are in")
 	print(' ')
